@@ -19,8 +19,8 @@ export const ShowField = ({ data }: { data: PropType }) => {
     <div className="w-full h-[600px] py-4 px-6 flex flex-col gap-11 items-center">
       <h1 className="text-4xl">{data.title}</h1>
       <div className="flex gap-10">
-        {data.contents.map((val) => {
-          return <Card data={val} />;
+        {data.contents.map((val, id) => {
+          return <Card key={id} data={val} />;
         })}
       </div>
     </div>

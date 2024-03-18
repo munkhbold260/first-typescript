@@ -25,9 +25,9 @@ export const SideMenu = ({
       onClick={() => state(data.id)}
       className={`${
         data.title === "Financial" ? "border-none" : "border-b"
-      } border-black text-xl hover:text-2xl duration-300 h-10 px-3`}
+      } border-black text-xl hover:text-2xl hover:text-red-600 duration-[0.3s] h-10 px-3`}
     >
-      <p>{data.title}</p>
+      <button>{data.title}</button>
     </div>
   );
 };
